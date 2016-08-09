@@ -1,3 +1,9 @@
+## emacs
+*~
+
+## special files for the makefile process:
+*blind.tex
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
