@@ -39,12 +39,12 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %- Makes the section title start with Appendix in the appendix environment
-\newcommand{\Appendix}
-{%\appendix
-\def\thesection{Appendix~\Alph{section}:}
-%\def\thesubsection{\Alph{section}.\arabic{subsection}}
-\def\thesubsection{A.\arabic{subsection}}
-}
+ \newcommand{\Appendix}
+ {%\appendix
+ \def\thesection{\Alph{section}}
+ \def\thesubsection{\Alph{section}.\arabic{subsection}}
+ %\def\thesubsection{A.\arabic{subsection}}
+ }
 
 \DeclareMathOperator{\vect}{vec}
 \DeclareMathOperator{\vech}{vech}

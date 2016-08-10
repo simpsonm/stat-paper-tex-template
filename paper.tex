@@ -12,6 +12,11 @@
 \setlength{\evensidemargin}{0pt} \tolerance=500
 \renewcommand{\baselinestretch}{1.5}
 
+\usepackage{amssymb, amsmath, latexsym, array, morefloats, epsfig, rotating, graphicx}
+\usepackage{subfigure, url, mathtools, enumerate, wasysym, threeparttable, lscape}
+\usepackage{natbib,color}
+\usepackage{bm, bbm,epstopdf}
+\usepackage{xr, zref, hyperref}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -34,12 +39,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %- Makes the section title start with Appendix in the appendix environment
-\newcommand{\Appendix}
-{%\appendix
-\def\thesection{Appendix~\Alph{section}:}
-%\def\thesubsection{\Alph{section}.\arabic{subsection}}
-\def\thesubsection{A.\arabic{subsection}}
-}
+ \newcommand{\Appendix}
+ {%\appendix
+ \def\thesection{\Alph{section}}
+ \def\thesubsection{\Alph{section}.\arabic{subsection}}
+ %\def\thesubsection{A.\arabic{subsection}}
+ }
+
 
 \DeclareMathOperator{\vect}{vec}
 \DeclareMathOperator{\vech}{vech}
